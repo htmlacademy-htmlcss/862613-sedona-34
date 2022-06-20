@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Николай Пшеничников](https://up.htmlacademy.ru/htmlcss/34/user/862613).
-* Наставник: `Магомед Кандаев` (https://htmlacademy.ru/profile/magomedkandaev).
+* Наставник: [Магомед Кандаев] (https://htmlacademy.ru/profile/magomedkandaev).
 
 ---
 
