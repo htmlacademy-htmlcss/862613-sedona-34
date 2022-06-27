@@ -6,44 +6,121 @@
   </head>
   <body>
     <header class="page-header">
-      <img src="#" alt="Город в седоне">
       <nav class="navigaton">
+        <a class="navigation-logo" href="index.html">
+          <img class="logo-header" src="#" alt="Город в седоне">
+        </a>
           <ul class="navigaton-list">
             <li class="navigation-item">
-            <a class="navigation-link" href="index.html">главная</a>
-
-            </li>
-           <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
-            </li>
-
+              <a class="navigation-link" href="index.html">главная</a>
             </li>
             <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
-          </li>
+              <a class="navigation-link" href="#">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гостиницы</a>
+            </li>
           </ul>
-        </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden"> поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden"> избранное</span>
-            </a>
-          </li>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden"> поиск</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden"> избранное</span>
+              </a>
+            </li>
+          </ul>
           <li class="navigation-item">
             <a class="button" href="#">Хочу сюда!</a>
           </li>
         </ul>
-
+      </nav>
 
     </header>
 
-    <main>
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Гостиницы</a>
+          </li>
+        </ul>
 
+        <section class="hotels-options">
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="pool" checked>
+                      Бассеин
+                  </label>
+                 </li>
+                 <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="Parking" checked>
+                       Парковка
+                    </label>
+                  </li>
+                 <li class="catalog-filter-item">
+                    <label class="control">
+                    <input class="control-input" type="checkbox" name="Wi-fi" >
+                      Wi-fi
+                    </label>
+                  </li>
+                </ul>
+             </fieldset>
+
+             <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья</legend>
+              <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="hotel">
+
+                  гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="motel" checked>
+
+                  мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="apartments">
+
+                  Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <button class="button" type="submit">применить</button>
+              <input type="reset" value="сбросить">
+            </form>
+        </section>
+      </header>
+
+      <section class="subscribe-catalog">
+        <h2 class="subscribe-form-title"> Подпишитесь на рассылку</h2>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="field"  placeholder="Ваш E-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+          <button class="button subscribe-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -69,10 +146,15 @@
 
       <section class="footer-contacts">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812 12 12</a>
-             </section>
+       </section>
 
       <section class="newsletter">
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a></p>
+        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <pre>
+          .html
+            academy
+          </pre>
+        </a></p>
       </section>
     </footer>
   </body>
